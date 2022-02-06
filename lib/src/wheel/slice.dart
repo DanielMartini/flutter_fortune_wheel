@@ -6,9 +6,15 @@ class _CircleSlice extends StatelessWidget {
       ..moveTo(0, 0)
       ..lineTo(radius, 0)
       ..arcTo(
-          Rect.fromCircle(
+        /// TODO-PADELEM original
+//          Rect.fromCircle(
+//            center: Offset(0, 0),
+//            radius: radius,
+//          ),
+          Rect.fromCenter(
             center: Offset(0, 0),
-            radius: radius,
+            width: radius * 3,
+            height: radius * 3,
           ),
           0,
           angle,

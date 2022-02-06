@@ -38,21 +38,22 @@ class _CircleSlicePainter extends CustomPainter {
           ..style = PaintingStyle.stroke,
       );
 
-      canvas.drawPath(
-        Path()
-          ..arcTo(
-              Rect.fromCircle(
-                center: Offset(0, 0),
-                radius: radius,
-              ),
-              0,
-              angle,
-              false),
-        Paint()
-          ..color = strokeColor!
-          ..strokeWidth = strokeWidth * 2
-          ..style = PaintingStyle.stroke,
-      );
+      ///TODO-PADELEM es el borde que hace el circulo
+//      canvas.drawPath(
+//        Path()
+//          ..arcTo(
+//              Rect.fromCircle(
+//                center: Offset(0, 0),
+//                radius: radius,
+//              ),
+//              0,
+//              angle,
+//              false),
+//        Paint()
+//          ..color = strokeColor!
+//          ..strokeWidth = strokeWidth * 2
+//          ..style = PaintingStyle.stroke,
+//      );
     }
   }
 
